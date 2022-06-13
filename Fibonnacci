@@ -1,0 +1,33 @@
+# Suite de Fibonnacci
+
+## Afficher les 50 premiers termes de la suite de Fibonnacci, puis afficher le rapport de deux termes successifs de la suite jusqu'à 100 termes
+
+from termios import NL1
+
+prenom = 'gregoire'
+LongueurPrenom = len(prenom)
+Np2= LongueurPrenom **2
+print("Carré =", Np2)
+
+def Fibonnacci():
+    nterms = 50
+ 
+    n1 = 0
+    n2 = 1
+ 
+    print("\n la suite fibonacci est :")
+    print(n1)
+    print(n2)
+    
+    cptFibo = 3
+    while(cptFibo < Np2):
+        termSuivant = n2 + n1
+        n1 = n2 
+        n2 = termSuivant
+        cptFibo +=1
+        rapport = n2 / n1
+        print("Compteur = ",cptFibo, "Valeur = ", termSuivant)
+        #print("Rapport des 2 derniers nombres = ", rapport)
+
+
+Fibonnacci()

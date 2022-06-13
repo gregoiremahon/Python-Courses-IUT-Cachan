@@ -1,0 +1,15 @@
+#Nombre entre 1000 et 9999
+
+# trouver le nbre qui s'écrit avec les 4 derniers chiffres identiques à lui même quand on l'élève au carré
+
+from cgi import test
+
+
+for Nombre in range(1000,10000):
+    CarNbreCarre = Nombre**2
+    Val = str(Nombre)
+    StrCarNbreCarre = str(CarNbreCarre)
+    if StrCarNbreCarre[-4: ] == Val:
+        print("Bravo, le nombre est", Val)
+
+    
